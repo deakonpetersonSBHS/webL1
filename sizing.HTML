@@ -1,0 +1,59 @@
+<!doctype html>
+
+<head>
+    <title>ATP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calulate() {
+            var data = document.getElementById("neck").value;
+            if (data <= 15) {
+                document.getElementById("answer").innerHTML = 'You are smaller than the smallest size';
+            }
+            if (data >= 15 && data < 15.5) {
+                document.getElementById("answer").innerHTML = 'Your size is S';
+            }
+            if (data >= 15.5 && data < 15.75) {
+                document.getElementById("answer").innerHTML = 'Your size is M';
+            }
+            if (data >= 16 && data < 16.5) {
+                document.getElementById("answer").innerHTML = 'Your size is L';
+            }
+            if (data >= 17 && data < 17.5) {
+                document.getElementById("answer").innerHTML = 'Your size is XL';
+            }
+            if (data >= 18 && data < 18.5) {
+                document.getElementById("answer").innerHTML = 'Your size is XXL';
+            }
+            if (data >= 18.5) {
+                document.getElementById("answer").innerHTML = 'You are bigger than the biggest size';
+            }
+        }
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="links">
+            <a href="index.html">Home.</a>
+            <a href="gallery.html">Latest Drops.</a>
+            <a href="contact.html">Contact.</a>
+            <a href="sizing.html">Sizing</a>
+        </div>
+
+        <img class="logo" src="images/logo.png" width="200" height="200" alt="logo">
+        
+        <input type="number" name="size" id="neck">
+            <button type="submit" onclick="calulate()">Submit</button>
+            <p id='answer'></p>
+        <h1>Clothing sizing</h1>
+        <p1>Please enter your neck circumference size in inches</p1>
+
+    </nav>
+    
+        
+
+ 
